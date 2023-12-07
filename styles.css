@@ -1,0 +1,244 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.woff2);
+}
+@font-face {
+    font-family: rejouice;
+    src: url(./Rejouice-Headline.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nb';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#loader {
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+#loader h3 {
+    font-size: 3vw;
+}
+#page1 {
+    height:100vh;
+    width:100%;
+    background: #dadada;
+    position: relative;
+}
+#cursor {
+    height:7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#cursor h5 {
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page1-content h1 {
+    font-family: rejouice;
+    font-size: 27vw;
+    line-height :27vw;
+    font-weight: 100;
+}
+#page1-content span {
+    font-family: rejouice;
+    display: inline-block;
+}
+#page2 {
+    height: 100vh;
+    width:100%;
+    background: #FAF8F3;
+    color: #0E0E0E;
+    display: flex;
+    flex-direction: column;
+}
+#page2>#nav {
+    display: flex;
+    padding: 2.8vw;
+    padding-bottom: 1vw;
+    height: 21vh;
+    width: 100%;
+    align-items:end;
+    overflow: hidden;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #91908e; */
+}
+hr{
+    width: 94.4vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+#page2>#nav>.elem h1 {
+    align-items: baseline;
+    font-family: nb;
+    font-size: 1.67vw;
+    font-weight: 100;
+}
+#page2>.heading {
+    padding: 2.8vw;
+}
+#page2>.heading h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+#space {
+    margin-left: 8vw;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+#page3-top {
+    text-align: center;
+}
+
+#page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500
+}
+#page3-top span {
+    font-size: 0.7vw;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+#page3-elements {
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8vw;
+}
+#page3-elements .box {
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+#page3-elements .box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all linear 0.7s;
+}
+#page3-elements>.box:hover img{
+    opacity: 0;
+}
+
+#page4 {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 video {
+    height: 100%;
+}
+#page4 svg {
+    position: absolute;
+    height:65%;
+}
+
+#page5 {
+    height: 100vh;
+    width:100%;
+}
+#page5 h1 {
+    font-size: 10vw;
+    font-family: rejouice;
+    font-weight: 100;
+    border-bottom: 1px solid #000;
+    width :96%;
+    margin-left: 2%;
+    margin-bottom: -3vw;
+}
+#page5 #swiperdiv {
+    position: relative;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100vw;
+}
+
+.swiper-slide img{
+    width:100%;
+}
+.swiper-wrapper {
+    align-items:baseline;
+    position: absolute;
+    z-index: 10;
+}
