@@ -5,10 +5,13 @@
 @font-face {
     font-family: rejouice;
     src: url(./fonts/Rejouice-Headline.ttf);
+<<<<<<< HEAD
 }
 video::-webkit-media-controls-fullscreen-button
 {
         display: none !important;
+=======
+>>>>>>> f79d9ad53de281ce1b4ff6a3d6ee9490d608d9e3
 }
 * {
     margin: 0;
