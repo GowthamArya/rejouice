@@ -1,3 +1,11 @@
+function playVideo() {document.querySelector("body").addEventListener("click",() =>{
+  document.querySelector("video").play();
+  console.log("hey")
+})
+}
+playVideo();
+
+
 function sliderAnimation(){
   var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,

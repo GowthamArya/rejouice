@@ -6,6 +6,10 @@
     font-family: rejouice;
     src: url(./fonts/Rejouice-Headline.ttf);
 }
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    background: #fff;
 }
 
 #loader {
@@ -36,7 +41,6 @@ html, body {
 #page1 {
     height:100vh;
     width:100%;
-    background: #dadada;
     position: relative;
 }
 #cursor {
@@ -197,15 +201,26 @@ hr{
 }
 
 #page4 {
-    width:100%;
     height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+#page4 a {
+    color: #fff;
+    padding: 5vw;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#page4-top {
+    position: absolute;
+    z-index: 2;
+}
 #page4 video {
-    height: 100%;
+    width: 50%;
 }
 #page4 svg {
     position: absolute;
